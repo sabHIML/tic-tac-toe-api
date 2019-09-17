@@ -1,4 +1,4 @@
-##API for game Tic Tac Toe
+## API for game Tic Tac Toe
 
 ### Basic Features:
 * Two users play a game of tick-tack-toe on the same computer
