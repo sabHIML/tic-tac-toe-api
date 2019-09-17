@@ -1,0 +1,29 @@
+version: '3'
+services:
+  tictactoe-api:
+    image: "node:10"
+    build: .
+    container_name: "tictactoe-api"
+    environment:
+      NODE_ENV: development
+      NODE_PATH: /
+    ports:
+      - "1111:1111"
+    volumes:
+      - ./src:/usr/src/app/ttt-server/src
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:4.0.9
+    container_name: "tictactoe-mongodb"
+    ports:
+      - 27017
+    volumes:
+      - tictactoe-mongo-data:/data/db
+    ports:
+      - 27017:27017
+    command: mongod --smallfiles --logpath=/dev/null
+volumes:
+  tictactoe-mongo-data:
