@@ -22,7 +22,7 @@
 ## Installation
 
 1. Clone the repository.
-2. Enter folder: `cd server`
+2. Enter folder: `cd tic-tac-toe-api`
 3. set DB in `src/config/config.js`
 4. Install dependencies: yarn
 5. Runs the app in the development mode: `yarn start`
