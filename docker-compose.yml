@@ -11,6 +11,7 @@ services:
       - "1111:1111"
     volumes:
       - ./src:/usr/src/app/ttt-server/src
+      - ./server.js:/usr/src/app/ttt-server/server.js
     links:
       - mongodb
     depends_on:

@@ -6,7 +6,8 @@
   "author": "sk. ahtasham billah himel",
   "license": "MIT",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node server.js",
+    "test": "mocha --recusive --exit"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
