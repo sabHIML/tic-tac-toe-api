@@ -13,6 +13,7 @@
 ### Technologies :
 * Express JS
 * Docker
+* MongoDB
 
 ### Developed with :
 * Node 12.1.0
